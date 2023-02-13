@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ptf.rs.tiket.controllers.TiketController">
+   <children>
+      <Label layoutX="219.0" layoutY="21.0" text="SUPPORT TICKET" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="8.0" layoutY="44.0" prefHeight="267.0" prefWidth="600.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="86.0">
+        <columns>
+          <TableColumn fx:id="colProblem" prefWidth="130.0" text="Naslov problema" />
+          <TableColumn fx:id="colUsluga" prefWidth="90.0" text="Tip usluge" />
+            <TableColumn fx:id="colKorisnik" prefWidth="100.0" text="Korisnik" />
+            <TableColumn fx:id="colDatumprijave" prefWidth="100.0" text="Datum prijave" />
+            <TableColumn fx:id="colAgent" text="Agent" />
+            <TableColumn fx:id="colDatumrjesenja" prefWidth="100.0" text="Datum rješenja" />
+        </columns>
+      </TableView>
+      <Button layoutX="508.0" layoutY="25.0" mnemonicParsing="false" onAction="#dodajNoviTiket" text="Dodaj tiket" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>
